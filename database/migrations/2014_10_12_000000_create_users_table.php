@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
 			$table->smallInteger('status')->default(1);
 			$table->smallInteger('is_manage')->default(0)->comment('是否是管理员');
 			$table->string('regist_ip')->nullable();
+			$table->string('avatar')->nullable();
 			$table->string('verify_token')->nullable()->comment('邮箱验证 Token');
 			$table->string('is_active')->default(0)->comment('邮箱是否已经验证');
 			$table->rememberToken();
