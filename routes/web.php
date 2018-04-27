@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/' , function() {
+	return view('welcome');
 });
+
+##前台管理路由##
+include_once __DIR__ . '/home.php';
+##后台管理路由##
+include_once __DIR__ . '/admin.php';
